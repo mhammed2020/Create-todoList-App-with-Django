@@ -4,4 +4,4 @@ from django.http import HttpResponse
 def index(request):
     
 
-    return HttpResponse ('HOLA DJANGO ')
+    return render(request,'account/list.html',{})
