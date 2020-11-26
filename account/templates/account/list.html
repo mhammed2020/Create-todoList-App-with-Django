@@ -1,11 +1,23 @@
 <h1> List to do app</h1>
 
+
+
+
+<form method="POST" action="/">
+    {% csrf_token %}
+    {{form.title}}
+    <input class="btn btn-info" type="submit" name="Create Task">
+</form>
+
+
+
+
+
 {% for task in tasks  %}
 <div>
     <p>{{task.title}}</p>
 
 </div>
-{{form}}
 
   
 {% endfor %}
