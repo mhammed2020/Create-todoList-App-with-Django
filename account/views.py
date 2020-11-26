@@ -32,4 +32,4 @@ def updateTask(request, pk):
 
     context = {'form':form}
 
-    return render(request, 'tasks/update_task.html', context)
+    return render(request, 'account/update_task.html', context)
